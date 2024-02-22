@@ -1,0 +1,170 @@
+.explore {    
+    background-image: url('../Assets/Trading-Broker-Hero-BG-2.webp');
+    background-size: auto;
+    background-repeat: repeat;
+    background-color: black;
+    background-position: left;
+    color: white;
+    .explore-wrapper {
+        display: flex;
+        padding: 120px 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            font-size: 3em;
+
+            span {
+                color: #7f61fd;
+            }
+        }
+
+        p {
+            color: gray;
+            width: 45%;
+            padding: 30px;
+            text-align: center;
+        }
+
+        button {
+            padding: 15px 28px;
+            background-color: #7f61fd;
+            color: white;
+            border: transparent;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 0.5rem;
+        }
+    }
+    .footContainer {
+        padding: 100px 0;
+        max-width: 1100px;
+        margin: 0 auto;
+        text-align: center;
+        align-items: flex-start;
+        // border: 2px solid red;
+        display: flex;
+        justify-content: space-between;
+
+        .vault {
+            text-align: left;
+
+            &>img {
+                height: 30px;   
+                padding-bottom: 30px;
+            }
+        }
+        .policy {
+            width: 60%;
+            justify-content: space-around;
+            display: flex;
+
+            h4 {
+                padding: 15px;
+                a {
+                    text-decoration: none;
+                    color: gray;
+    
+                }
+                :hover {
+                    color: #7f61fd;
+    
+                }
+            }
+
+
+
+        }
+    }
+}
+
+@media (max-width: 840px) {
+    .explore {    
+        background-image: url('../Assets/Trading-Broker-Hero-BG-2.webp');
+        background-size: auto;
+        background-repeat: repeat;
+        background-color: black;
+        background-position: left;
+        color: white;
+        .explore-wrapper {
+            display: flex;
+            padding: 120px 0;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+            h1 {
+                font-size: 1.5em;
+                text-align: center;
+    
+                span {
+                    color: #7f61fd;
+                }
+            }
+    
+            p {
+                color: gray;
+                width: 95%;
+                font-size: 12px;
+                padding: 30px 10px;
+                text-align: center;
+            }
+    
+            button {
+
+            }
+        }
+        .footContainer {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+
+    
+            .vault {
+                text-align: center;
+                align-items: center;
+
+    
+                &>img {
+                    // padding: 0;
+
+                }
+                p {
+                    margin: 0 auto;
+                    padding-bottom: 15px;
+                    width: 80%;
+                }
+            }
+            .policy {
+                display: flex;
+                padding: 15px;
+                gap: 15px;
+                flex-direction: column;
+
+                h2 {
+                    font-size: 15px;
+                }
+
+    
+                h4 {
+                    font-size: 12px;
+
+                    a {
+
+        
+                    }
+                    :hover {
+
+        
+                    }
+                }
+    
+    
+    
+            }
+        }
+    }
+
+}

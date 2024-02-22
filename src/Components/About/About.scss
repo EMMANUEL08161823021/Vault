@@ -1,0 +1,128 @@
+.about {
+    // overflow: hidden;
+    background-color: #fafafafa;
+    width: 100%;
+    scroll-snap-align: center;
+    
+    .about-wrapper {
+        display: flex;
+        flex-direction: column;
+        max-width: 1200px;
+        text-align: center;
+        padding: 80px 0;
+        margin: 0 auto;
+
+        .title {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h1 {
+                font-size: 40px;
+                padding: 20px 0;
+                font-size: 600;
+            }
+            p {
+                text-align: center;
+                font-size: 14px;
+                width: 70%;
+            }
+        }
+        .terms {
+            max-width: 1300px;
+            display: flex;
+            margin: 0 auto;
+            padding: 60px 30px;
+            justify-content: space-between;
+            // width: 100%;
+
+            .secure {
+                background: #f4f4f5;
+                width: 28%;
+                border-radius: 1em;
+                cursor: pointer;
+                padding: 15px;
+                transition: 0.5s all ease;
+
+
+                span {
+                    display: flex;
+                    width: 70px;
+                    height: 70px;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 100%;
+                    padding: 0 10px;
+                    margin: 15px auto;
+                    background-color: white;
+                    font-size: 3em;
+                    color: #7f61fd;
+
+                }
+                h2 {
+                    font-size: 1.5em;
+                    padding: 20px 0;
+                }
+                p {
+                    font-size: 14px;
+                    color: rgb(81, 79, 79);
+                }
+
+            }
+            .secure:hover {
+                transform: scale(1.07);
+            }  
+
+
+        }
+    }
+}
+
+@media (max-width: 840px) {
+
+    .about {        
+        .about-wrapper {
+
+    
+            .title {
+    
+                h1 {
+                    font-size: 1.5em;
+                }
+                p {
+                    font-size: 12px;
+                }
+            }
+            .terms {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                gap: 20px;
+
+    
+                .secure {
+                    // background: #e8e8ea;
+                    width: 90%;
+
+                    span {
+                        margin: 10px auto;
+                    }
+
+                    h2 {
+                        padding: 15px 0;
+                        font-size: 1em;
+                    }
+                    p {
+                        font-size: 12px;
+                    }
+
+                }
+
+
+    
+            }
+        }
+    }
+
+}

@@ -1,0 +1,123 @@
+.questions {
+    overflow: hidden;
+    width: 100%;
+    padding: 100px 0;
+    background-color: #fafafafa;
+    // height: 100vh;
+    align-items: flex-start;
+
+    .question-wrapper {
+        max-width: 1100px;
+        justify-content: space-between;
+        display: flex;
+        margin: 0 auto;
+        .text {
+            h1 {
+                font-size: 3em;
+            }
+            
+    
+        }
+        .quest {
+            background: #ebebec;
+            border-radius: 3em;
+            overflow: hidden;
+            padding: 30px 0;
+            width: 70%;
+    
+            .item {
+                border-bottom: 1px solid rgb(195, 194, 194);
+                padding: 20px 35px;
+    
+                .title {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    h2 {
+                        font-size: 1.2em;
+                    }
+    
+                    span {
+                        cursor: pointer;
+                        padding: 15px 0;
+                    }
+                }
+                .content {
+                    overflow: hidden;
+                    max-height: 0;
+                    color: gray;
+                    transition: 0.5s all cubic-bezier(0, 1, 0, 1);
+                }
+                .content.show {
+                    height: auto;
+                    max-height: 9999px;
+                    transition: 0.5s all cubic-bezier(1, 0, 1, 0);
+                    color: gray;
+                }
+            }
+            .item:hover {
+                color: #7f61fd;
+            }
+        }
+    }
+
+
+}
+
+@media (max-width: 840px)  {
+
+    .questions {
+
+        width: 100%;
+        padding: 100px 0;
+        background-color: #fafafafa;
+        // height: 100vh;
+        align-items: flex-start;
+    
+        .question-wrapper {
+            max-width: 1100px;
+            justify-content: center;
+            text-align: left;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            .text {
+                h1 {
+                    font-size: 1.5em;
+                    padding: 15px 20px;
+                }
+                
+        
+            }
+            .quest {
+                width: 90%;
+
+        
+                .item {
+
+        
+                    .title {
+                        h2 {
+                            font-size: 1em;
+                        }
+
+        
+                        span {
+
+                        }
+                    }
+                    .content {
+                    }
+                    .content.show {
+
+                    }
+                }
+            }
+        }
+    
+    
+    }
+
+}
